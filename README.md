@@ -64,3 +64,17 @@
 支付宝账号：**a3824036@126.com**
 
 ETH钱包：**0x1ADa2542b25c2D85be422A7c4D961c398544F230**
+
+## 开发
+
+1. `$ npm i`
+
+For develop environment:
+
+1. `$ npm run dev`
+2. use `webpack/dev.js` for `Tampermonkey`
+
+For deploy environment:
+
+1. `$ npm run deploy`
+2. find files in `dist` folder.
