@@ -20,7 +20,7 @@
 
 ## How to use
 
-使用方式很简单，为`Tampermonkey`新增如下脚本（**一定要带上注释**），然后在相关页面开启即可：
+使用方式很简单，为`Tampermonkey`新增如下脚本（**一定要带上注释**），然后在相关页面开启即可：
 
 ```javascript
 // ==UserScript==
@@ -48,6 +48,8 @@
 })();
 ```
 
+如果嫌github访问慢，可以直接使用`dist/all.js`里面的压缩好的代码，放入`Tampermonkey`的脚本中，粘贴进去可能会卡一阵子，等一下就好了。
+
 ## 未来
 
 * 桌面提示当前比较扰民，将进一步探寻亲民的方式。
@@ -64,3 +66,17 @@
 支付宝账号：**a3824036@126.com**
 
 ETH钱包：**0x1ADa2542b25c2D85be422A7c4D961c398544F230**
+
+## 开发
+
+1. `$ npm i`
+
+For develop environment:
+
+1. `$ npm run dev`
+2. use `webpack/dev.js` for `Tampermonkey`
+
+For deploy environment:
+
+1. `$ npm run deploy`
+2. find files in `dist` folder.
