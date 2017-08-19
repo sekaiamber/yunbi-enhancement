@@ -20,7 +20,7 @@
 
 ## How to use
 
-使用方式很简单，为`Tampermonkey`新增如下脚本（**一定要带上注释**），然后在相关页面开启即可：
+使用方式很简单，为`Tampermonkey`新增如下脚本（**一定要带上注释**），然后在相关页面开启即可：
 
 ```javascript
 // ==UserScript==
