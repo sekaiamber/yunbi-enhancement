@@ -1,0 +1,7 @@
+.DS_Store
+node_modules/
+vm/
+scratch/
+npm-debug.log
+selenium-debug.log
+coverage/

@@ -1,0 +1,17 @@
+#stalls {
+  .stall {
+    background: rgb(255,105,57);
+    position: relative;
+    width: 300px;
+    height: 30px;
+  }
+
+  .bid {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 30px;
+    background: rgb(132,247,102);
+    transition: all .3s;
+  }
+}
