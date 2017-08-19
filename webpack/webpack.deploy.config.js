@@ -4,6 +4,7 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var uglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 var CommonsChunkPlugin = webpack.optimize.CommonsChunkPlugin;
+var WebpackShellPlugin = require('webpack-shell-plugin');
 
 var config = {
   context: path.join(__dirname, '..', '/src'),
@@ -30,6 +31,16 @@ var config = {
     new CommonsChunkPlugin('vendors', 'vendors.js', Infinity),
     new ExtractTextPlugin("[name].css"),
     new webpack.optimize.DedupePlugin(),
+    new WebpackShellPlugin({
+      onBuildExit: [
+        'echo',
+        'echo ==============',
+        'echo   ALL IN ONE',
+        'echo ==============',
+        'echo',
+        'node webpack/allinone.js'
+      ]
+    })
   ],
   module: {
     perLoaders: [
@@ -72,7 +83,6 @@ var config = {
     extensions: ['', '.js', '.json', '.jsx', '.reactx', 'react'],
     alias: {}
   },
-  devtool: 'eval-source-map',
   devServer: {
     host: '0.0.0.0',
   },
