@@ -8,8 +8,6 @@ var css = fs.readFileSync(path.join(__dirname, '..', 'dist', 'index.css')).toStr
 allinone += "_csss.innerText = '" + css + "';";
 allinone += "document.getElementsByTagName('HEAD').item(0).appendChild(_csss);";
 
-var vendors = fs.readFileSync(path.join(__dirname, '..', 'dist', 'vendors.js')).toString();
-allinone += vendors;
 var index = fs.readFileSync(path.join(__dirname, '..', 'dist', 'index.js')).toString();
 allinone += index;
 
