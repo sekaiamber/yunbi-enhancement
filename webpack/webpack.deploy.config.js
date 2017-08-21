@@ -34,6 +34,12 @@ var config = {
       onBuildExit: [
         'echo',
         'echo ==============',
+        'echo      WORK',
+        'echo ==============',
+        'echo',
+        'node webpack/work.js',
+        'echo',
+        'echo ==============',
         'echo   ALL IN ONE',
         'echo ==============',
         'echo',
