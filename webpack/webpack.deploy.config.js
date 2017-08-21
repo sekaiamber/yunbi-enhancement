@@ -28,7 +28,6 @@ var config = {
       minSizeReduce: 1.5,
       moveToParents: true
     }),
-    new CommonsChunkPlugin('vendors', 'vendors.js', Infinity),
     new ExtractTextPlugin("[name].css"),
     new webpack.optimize.DedupePlugin(),
     new WebpackShellPlugin({
