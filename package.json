@@ -1,6 +1,6 @@
 {
   "name": "yunbi-enhancement",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "yunbi market page enhancement",
   "main": "dist/index.js",
   "scripts": {

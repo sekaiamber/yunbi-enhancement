@@ -31,7 +31,7 @@ export default class Notify extends BaseComponent {
   }
 
   update() {
-    const num = parseInt(localStorage.getItem('sekai_notify_value'), 10);
+    const num = parseFloat(localStorage.getItem('sekai_notify_value'));
     const diff = parseFloat(localStorage.getItem('sekai_notify_diff'));
     const $origin = this.$('#ticker')[0].children[0];
     const price = parseFloat($origin.innerText);
