@@ -35,15 +35,18 @@
 
 (function() {
   'use strict';
-  $.getScript("https://sekaiamber.github.io/yunbi-enhancement/dist/vendors.js", function() {
-    $.getScript("https://sekaiamber.github.io/yunbi-enhancement/dist/index.js");
-  });
   var head = document.getElementsByTagName('HEAD').item(0);
   var style = document.createElement('link');
   style.href = 'https://sekaiamber.github.io/yunbi-enhancement/dist/index.css';
   style.rel = 'stylesheet';
   style.type = 'text/css';
   head.appendChild(style);
+  var script = document.createElement('script');
+  script.type = "text/javascript";
+  script.async = true;
+  var date = new Date();
+  script.src = "https://sekaiamber.github.io/yunbi-enhancement/dist/index.js" + "?_=" + date.getMonth() + date.getDate();
+  head.appendChild(script);
   // Your code here...
 })();
 ```
@@ -80,3 +83,7 @@ For deploy environment:
 
 1. `$ npm run deploy`
 2. find files in `dist` folder.
+
+## 更新日志
+
+请查看[UPDATE.md](https://github.com/sekaiamber/yunbi-enhancement/blob/master/UPDATE.md)。
